@@ -50,8 +50,6 @@ portfolio/
 
 ## 🎯 Próximos passos
 
-- [ ] Adicionar foto profissional
-- [ ] Adicionar projetos reais
 - [ ] Integrar GitHub Stats
 - [ ] Criar versão em Next.js
 - [ ] Melhorar animações
