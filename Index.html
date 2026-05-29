@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Mateus Oliveira, estudante de Engenharia de Software e desenvolvedor em formação."
+        data-pt="Portfólio de Mateus Oliveira, estudante de Engenharia de Software e desenvolvedor em formação."
+        data-en="Portfolio of Mateus Oliveira, Software Engineering student and developer in training."
+        data-i18n-attr="content" />
+  <title data-pt="Mateus Oliveira | Portfólio" data-en="Mateus Oliveira | Portfolio">Mateus Oliveira | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="Css/Style.css" />
+  <link rel="stylesheet" href="Css/Responsive.css" />
+</head>
+
+<body>
+  <div class="brilho-mouse" id="brilhoMouse"></div>
+
+  <header class="cabecalho">
+    <nav class="container navegacao">
+      <a class="logo" href="#inicio">
+        <span class="logo-marca">M</span>
+        <span>Mateus</span>
+      </a>
+
+      <button class="botao-menu" id="botaoMenu"
+              aria-label="Abrir menu"
+              data-pt="Abrir menu"
+              data-en="Open menu"
+              data-i18n-attr="aria-label">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="menu-links" id="menuLinks">
+        <li><a href="#inicio" data-pt="Início" data-en="Home">Início</a></li>
+        <li><a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a></li>
+        <li><a href="#habilidades" data-pt="Habilidades" data-en="Skills">Habilidades</a></li>
+        <li><a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a></li>
+        <li><a href="#trajetoria" data-pt="Trajetória" data-en="Journey">Trajetória</a></li>
+        <li><a href="#contato" data-pt="Contato" data-en="Contact">Contato</a></li>
+      </ul>
+
+      <div class="botoes-topo">
+        <button class="botao-pequeno" id="botaoIdioma" type="button"
+                aria-label="Mudar idioma"
+                data-pt="Mudar idioma"
+                data-en="Change language"
+                data-i18n-attr="aria-label">
+          <i class="fa-solid fa-language"></i>
+          <span>EN</span>
+        </button>
+
+        <button class="botao-pequeno" id="botaoTema" type="button"
+                aria-label="Mudar tema"
+                data-pt="Mudar tema"
+                data-en="Toggle theme"
+                data-i18n-attr="aria-label">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="secao-inicio" id="inicio">
+      <div class="container grade-inicio">
+        <div class="conteudo-inicio animar">
+          <p class="destaque" data-pt="Olá, eu sou" data-en="Hello, I'm">Olá, eu sou</p>
+
+          <h1>
+            Mateus <br />
+            <span>Oliveira</span>
+          </h1>
+
+          <h2 data-pt="Desenvolvedor fullstack em formação" data-en="Full-stack developer in training">
+            Desenvolvedor fullstack em formação
+          </h2>
+
+          <p class="texto-inicio" data-pt="Estudante de Engenharia de Software e estagiário em tecnologia. Estou construindo projetos reais para evoluir em front-end, back-end, banco de dados e testes — com foco em me tornar um desenvolvedor fullstack."
+             data-en="Software Engineering student and technology intern. I am building real projects to improve in front-end, back-end, databases and testing — focused on becoming a full-stack developer.">
+            Estudante de Engenharia de Software e estagiário em tecnologia. Estou construindo projetos reais para evoluir em front-end, back-end, banco de dados e testes — com foco em me tornar um desenvolvedor fullstack.
+          </p>
+
+          <div class="botoes-inicio">
+            <a class="botao botao-principal" href="Assets/Files/Currículo - Dev.pdf" download>
+              <i class="fa-solid fa-download"></i>
+              <span data-pt="Baixar currículo" data-en="Download resume">Baixar currículo</span>
+            </a>
+
+            <a class="botao botao-secundario" href="#projetos">
+              <i class="fa-solid fa-code"></i>
+              <span data-pt="Ver projetos" data-en="View projects">Ver projetos</span>
+            </a>
+
+            <a class="botao botao-secundario" href="mailto:mateusoliveiranascimento28@gmail.com">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span data-pt="Contato" data-en="Contact">Contato</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="cartao-codigo animar" aria-label="Bloco de código sobre Mateus">
+          <div class="topo-codigo">
+            <span class="bolinha vermelha"></span>
+            <span class="bolinha amarela"></span>
+            <span class="bolinha verde"></span>
+          </div>
+
+          <pre><code><span class="numero">1</span><span class="roxo">class</span> Desenvolvedor {
+<span class="numero">2</span>  constructor() {
+<span class="numero">3</span>    <span class="roxo">this</span>.<span class="azul">nome</span> = <span class="verde">"Mateus Oliveira"</span>;
+<span class="numero">4</span>    <span class="roxo">this</span>.<span class="azul">curso</span> = <span class="verde">"Engenharia de Software"</span>;
+<span class="numero">5</span>    <span class="roxo">this</span>.<span class="azul">foco</span> = [<span class="verde">"Front-end"</span>, <span class="verde">"Back-end"</span>, <span class="verde">"Testes"</span>];
+<span class="numero">6</span>    <span class="roxo">this</span>.<span class="azul">stack</span> = [<span class="verde">"JS"</span>, <span class="verde">"C#"</span>, <span class="verde">"SQL"</span>, <span class="verde">"Next.js"</span>];
+<span class="numero">7</span>  }
+<span class="numero">8</span>}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-interesses" id="interesses">
+      <div class="container">
+        <div class="cabecalho-secao animar">
+          <p class="destaque" data-pt="coisas que eu curto" data-en="things I love">coisas que eu curto</p>
+          <h2 data-pt="Tecnologia, design e resolver problemas." data-en="Technology, design and solving problems.">Tecnologia, design e resolver problemas.</h2>
+          <p data-pt="Essa parte mostra minha personalidade como dev: o que eu gosto de estudar, criar e melhorar."
+             data-en="This section shows my personality as a developer: what I like to study, create and improve.">
+            Essa parte mostra minha personalidade como dev: o que eu gosto de estudar, criar e melhorar.
+          </p>
+        </div>
+
+        <div class="grade-interesses">
+          <article class="cartao-interesse animar">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Front-end</h3>
+            <p data-pt="Gosto de transformar uma ideia em interface bonita, responsiva e fácil de usar."
+               data-en="I like turning ideas into beautiful, responsive and easy-to-use interfaces.">
+              Gosto de transformar uma ideia em interface bonita, responsiva e fácil de usar.
+            </p>
+          </article>
+
+          <article class="cartao-interesse animar">
+            <i class="fa-solid fa-database"></i>
+            <h3 data-pt="Back-end e Dados" data-en="Back-end and Data">Back-end e Dados</h3>
+            <p data-pt="Estou estudando C#, ASP.NET, SQL Server e APIs para entender sistemas por trás da tela."
+               data-en="I am studying C#, ASP.NET, SQL Server and APIs to understand systems behind the screen.">
+              Estou estudando C#, ASP.NET, SQL Server e APIs para entender sistemas por trás da tela.
+            </p>
+          </article>
+
+          <article class="cartao-interesse animar">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <h3 data-pt="Código Criativo" data-en="Creative Coding">Código Criativo</h3>
+            <p data-pt="Tenho interesse em animações, microinterações e layouts criativos sem perder performance."
+               data-en="I am interested in animations, microinteractions and creative layouts without losing performance.">
+              Tenho interesse em animações, microinterações e layouts criativos sem perder performance.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-sobre" id="sobre">
+      <div class="container grade-sobre">
+        <div class="cartao-foto animar">
+          <img class="foto-temporaria" src="Assets/Images/myphoto.jpg" alt="Foto de Mateus Oliveira" />
+        </div>
+
+        <div class="texto-sobre animar">
+          <p class="destaque" data-pt="sobre mim" data-en="about me">sobre mim</p>
+          <h2 data-pt="Dev iniciante, mas com direção de profissional." data-en="Beginner developer, but with professional direction.">Dev iniciante, mas com direção de profissional.</h2>
+
+          <p data-pt="Sou Mateus Oliveira, estudante de Engenharia de software na Universidade Vassouras e estagiário em tecnologia. Meu objetivo é construir uma base forte em programação, banco de dados, testes e desenvolvimento web."
+             data-en="I am Mateus Oliveira, a Software Engineering student at Universidade Vassouras and a technology intern. My goal is to build a strong foundation in programming, databases, testing and web development.">
+            Sou Mateus Oliveira, estudante de Engenharia de software na Universidade Vassouras e estagiário em tecnologia. Meu objetivo é construir uma base forte em programação, banco de dados, testes e desenvolvimento web.
+          </p>
+
+          <p data-pt="No estágio, tenho contato com testes de sistemas, documentação de problemas e comunicação com devs. Isso me ajuda a entender que desenvolver software não é só escrever código."
+             data-en="During my internship, I work with system testing, issue documentation and communication with developers. This helps me understand that software development is not just writing code.">
+            No estágio, tenho contato com testes de sistemas, documentação de problemas e comunicação com devs. Isso me ajuda a entender que desenvolver software não é só escrever código.
+          </p>
+
+          <blockquote data-pt="Não quero parecer experiente sem ser. Quero mostrar que eu aprendo rápido, documento bem e levo evolução a sério."
+                      data-en="I do not want to look experienced without being experienced. I want to show that I learn fast, document well and take improvement seriously.">
+            “Não quero parecer experiente sem ser. Quero mostrar que eu aprendo rápido, documento bem e levo evolução a sério.”
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-habilidades" id="habilidades">
+      <div class="container">
+        <div class="cabecalho-secao animar">
+          <p class="destaque" data-pt="habilidades" data-en="skills">habilidades</p>
+          <h2 data-pt="Stack que estou estudando e aplicando." data-en="Stack I am studying and applying.">Stack que estou estudando e aplicando.</h2>
+        </div>
+
+        <div class="lista-habilidades animar">
+          <span><i class="fa-brands fa-html5"></i> HTML5</span>
+          <span><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+          <span><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span><i class="fa-brands fa-react"></i> React</span>
+          <span><i class="fa-solid fa-n"></i> Next.js</span>
+          <span><i class="fa-solid fa-code"></i> C#</span>
+          <span><i class="fa-solid fa-server"></i> ASP.NET</span>
+          <span><i class="fa-solid fa-database"></i> SQL Server</span>
+          <span><i class="fa-solid fa-leaf"></i> MongoDB</span>
+          <span><i class="fa-brands fa-git-alt"></i> Git</span>
+          <span><i class="fa-brands fa-github"></i> GitHub</span>
+          <span><i class="fa-solid fa-bug"></i> Testes</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-projetos" id="projetos">
+      <div class="container">
+        <div class="cabecalho-secao animar">
+          <p class="destaque" data-pt="projetos" data-en="projects">projetos</p>
+          <h2 data-pt="Projetos principais." data-en="Main projects.">Projetos principais.</h2>
+          <p data-pt="Aqui eu mostro o problema, o que eu usei e o que eu aprendi em cada projeto."
+             data-en="Here I show the problem, what I used and what I learned in each project.">
+            Aqui eu mostro o problema, o que eu usei e o que eu aprendi em cada projeto.
+          </p>
+        </div>
+
+        <div class="lista-projetos">
+          <article class="cartao-projeto animar">
+            <div class="visual-projeto"><div><i class="fa-solid fa-users"></i></div></div>
+            <div class="conteudo-projeto">
+              <p class="rotulo-projeto">01 · MVP / Produto</p>
+              <h3>LinkUp</h3>
+              <p data-pt="Plataforma para conectar desenvolvedores a empresas e clientes da região, com perfis, busca por habilidades, projetos, chat e avaliações."
+                 data-en="Platform to connect developers to local companies and clients, with profiles, skill search, projects, chat and reviews.">
+                Plataforma para conectar desenvolvedores a empresas e clientes da região, com perfis, busca por habilidades, projetos, chat e avaliações.
+              </p>
+              <div class="etiquetas"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Next.js futuro</span></div>
+              <div class="links-projeto">
+                <a class="botao botao-principal" href="#"><i class="fa-solid fa-book-open"></i> Case</a>
+                <a class="botao botao-secundario" href="https://github.com/ak1ra-git/LinkUp"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-projeto animar">
+            <div class="visual-projeto"><div><i class="fa-solid fa-cart-shopping"></i></div></div>
+            <div class="conteudo-projeto">
+              <p class="rotulo-projeto">02 · Banco de Dados</p>
+              <h3 data-pt="Sistema de Pedidos" data-en="Order System">Sistema de Pedidos</h3>
+              <p data-pt="Projeto prático para listar clientes, produtos, pedidos, formatar datas em pt-BR, formatar valores em reais e calcular totais."
+                 data-en="Practical project to list clients, products and orders, format dates, format currency values and calculate totals.">
+                Projeto prático para listar clientes, produtos, pedidos, formatar datas em pt-BR, formatar valores em reais e calcular totais.
+              </p>
+              <div class="etiquetas"><span>SQL Server</span><span>T-SQL</span><span>Joins</span><span>Modelagem</span></div>
+              <div class="links-projeto">
+                <a class="botao botao-principal" href="#"><i class="fa-solid fa-book-open"></i> Case</a>
+                <a class="botao botao-secundario" href="https://github.com/ak1ra-git/Loja-Pc"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao-projeto animar">
+            <div class="visual-projeto"><div><i class="fa-solid fa-cloud-arrow-down"></i></div></div>
+            <div class="conteudo-projeto">
+              <p class="rotulo-projeto">03 · APIs / Dados</p>
+              <h3>AlienX</h3>
+              <p data-pt="Ferramenta de inteligência de mercado para jogos indie Steam/PC, com coleta de dados via YouTube, Reddit e IGDB, módulos separados, documentação e testes em Jupyter Notebook."
+                 data-en="Market intelligence tool for indie Steam/PC games, collecting data from YouTube, Reddit and IGDB, with separate modules, documentation and tests in Jupyter Notebook.">
+                Ferramenta de inteligência de mercado para jogos indie Steam/PC, com coleta de dados via YouTube, Reddit e IGDB, módulos separados, documentação e testes em Jupyter Notebook.
+              </p>
+              <div class="etiquetas"><span>Python</span><span>APIs</span><span>Jupyter</span><span>GitHub</span></div>
+              <div class="links-projeto">
+                <a class="botao botao-principal" href="#"><i class="fa-solid fa-book-open"></i> Case</a>
+                <a class="botao botao-secundario" href="https://github.com/ak1ra-git/game-data-enrichment"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-trajetoria" id="trajetoria">
+      <div class="container">
+        <div class="cabecalho-secao animar">
+          <p class="destaque" data-pt="trajetória" data-en="journey">trajetória</p>
+          <h2 data-pt="Minha caminhada até aqui." data-en="My journey so far.">Minha caminhada até aqui.</h2>
+        </div>
+
+        <div class="linha-do-tempo">
+          <article class="item-trajetoria animar">
+            <p>2026 · Atual</p>
+            <div>
+              <h3 data-pt="Estagiário em tecnologia · FGV Conhecimento" data-en="Technology intern · FGV Conhecimento">Estagiário em tecnologia · FGV Conhecimento</h3>
+              <span data-pt="Contato com testes de sistemas, documentação de problemas, SQL Server, MongoDB, Next.js e ASP.NET em contexto profissional."
+                    data-en="Experience with system testing, issue documentation, SQL Server, MongoDB, Next.js and ASP.NET in a professional context.">
+                Contato com testes de sistemas, documentação de problemas, SQL Server, MongoDB, Next.js e ASP.NET em contexto profissional.
+              </span>
+            </div>
+          </article>
+
+          <article class="item-trajetoria animar">
+            <p>2025 · 2026</p>
+            <div>
+              <h3 data-pt="AlienX — Bolsa Futuro Digital" data-en="AlienX — Bolsa Futuro Digital">AlienX — Bolsa Futuro Digital</h3>
+              <span data-pt="Projeto de inteligência de mercado para jogos indie Steam/PC, coletando dados de YouTube, Reddit e IGDB, tratando e enriquecendo uma base de jogos para análise."
+                    data-en="Market intelligence project for indie Steam/PC games, collecting data from YouTube, Reddit and IGDB, processing and enriching a games dataset for analysis.">
+                Projeto de inteligência de mercado para jogos indie Steam/PC, coletando dados de YouTube, Reddit e IGDB, tratando e enriquecendo uma base de jogos para análise.
+              </span>
+            </div>
+          </article>
+
+          <article class="item-trajetoria animar">
+            <p>2025 · Atual</p>
+            <div>
+              <h3 data-pt="Engenharia de software na Universidade Vassouras" data-en="Software Engineering at Universidade Vassouras">Engenharia de software na Universidade Vassouras</h3>
+              <span data-pt="Formação em lógica, programação, banco de dados, documentação e construção de sistemas."
+                    data-en="Education in logic, programming, databases, documentation and software development.">
+                Formação em lógica, programação, banco de dados, documentação e construção de sistemas.
+              </span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao-contato" id="contato">
+      <div class="container animar">
+        <p class="destaque" data-pt="contato" data-en="contact">contato</p>
+        <h2 data-pt="Tem uma oportunidade, projeto ou feedback?" data-en="Do you have an opportunity, project or feedback?">Tem uma oportunidade, projeto ou feedback?</h2>
+        <p data-pt="Me chama. Estou buscando crescer como desenvolvedor e transformar estudo em entrega real."
+           data-en="Reach out to me. I am looking to grow as a developer and turn study into real delivery.">
+          Me chama. Estou buscando crescer como desenvolvedor e transformar estudo em entrega real.
+        </p>
+
+        <div class="botoes-contato">
+          <a class="botao botao-principal" href="mailto:mateusoliveiranascimento28@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a class="botao botao-secundario" href="https://github.com/ak1ra-git" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a class="botao botao-secundario" href="https://www.linkedin.com/in/mateusssdev" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a class="botao botao-secundario" href="https://instagram.com/mateusss.dev" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container" data-pt="Feito com estudo, código e café · Mateus Oliveira © 2026" data-en="Made with study, code and coffee · Mateus Oliveira © 2026">
+      Feito com estudo, código e café · Mateus Oliveira © 2026
+    </div>
+  </footer>
+
+  <script src="Js/Main.js"></script>
+</body>
+</html>
